@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Feed</title>
+    <style>
+        #live-video {
+            max-width: 200%;
+            max-height: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            margin: 0 auto;
+            text-align: center;
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body style="background-color: brown;">
+    <h2 style="text-align: center;color:darkorange">Live detection</h2>
+    <img id="live-video" src="" alt="Live Video Feed">
+    <br>
+    <div class="center">
+        <button id="stop-feed" style="text-align: center;background-color:tomato;font-size: larger;">Stop Live Feed</button>
+    </div> <!-- Button to stop the live feed -->
+    <script>
+        document.getElementById("stop-feed").addEventListener("click", function () {
+            window.location.href = "/"; // Redirect back to the home page when stopping the live feed
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("/live_feed").then(response => {
+                document.getElementById("live-video").src = response.url; // Set the live video source
+            });
+        });
+    </script>
+</body>
+
+</html>

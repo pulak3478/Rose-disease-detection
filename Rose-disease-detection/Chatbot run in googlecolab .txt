@@ -1,0 +1,19 @@
+!pip install pyngrok
+import requests
+import zipfile
+file_url = "upload your file to goolge drive and paste the link of your file here must be upload in zip"
+r = requests.get(file_url, stream=True)
+with open("/content/cbot.zip", "wb") as file:
+    for chunk in r.iter_content(chunk_size=1024):
+        if chunk:  # Filter out keep-alive new chunks
+            file.write(chunk)
+with zipfile.ZipFile("/content/cbot.zip", "r") as zip_ref:
+    zip_ref.extractall("/content/cbot_extracted")
+%cd /content/cbot_extracted/chatbot
+
+
+
+
+
+
+exec(open('app.py').read())

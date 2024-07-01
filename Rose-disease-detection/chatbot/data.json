@@ -1,0 +1,1275 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hello, thanks for asking",
+                "Good to see you again",
+                "Hi there, how can I help?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [
+                "Go to somewhere else"
+            ],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "How you could help me?",
+                "How could you help me today?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered"
+            ],
+            "responses": [
+                "I can guide you about rose plantation",
+                "I can suggest you rose disease preventation techniques, ",
+                "We are offering support for Adverse rose disease preventation and plantation"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "rose plantation",
+            "patterns": [
+                "how to plant rose?",
+                "how to plant roses?",
+                "rose planing methods",
+                "rose plantation",
+                "rose plantation guidelines",
+                "rose plantation techniques"
+            ],
+            "responses": [
+                "Assessing the suitability of climate and soil conditions for growing roses is crucial for successful cultivation. Optimal site selection involves choosing well-drained soil with ample sunlight exposure, ideally 6-8 hours daily, while also considering protection from strong winds and ensuring accessibility for irrigation and maintenance. Soil preparation entails testing pH levels and fertility, aiming for slightly acidic soil (pH 6.0-6.5) enriched with organic matter to enhance structure and fertility, addressing drainage issues as necessary. When selecting rose varieties, factors such as climate, soil type, and intended use should guide choices, with preference given to certified disease-free plants from reputable sources. Planting techniques involve proper timing, digging adequately sized holes amended with compost, and positioning plants with the graft union slightly above soil level before backfilling and watering thoroughly. Effective irrigation strategies include consistent moisture provision, ideally via drip systems or soaker hoses, supplemented by mulching for moisture retention and weed suppression. Fertilization, conducted with balanced formulations as per instructions, should occur in early spring and again later, with caution against excessive nitrogen application. Pruning during the dormant season helps maintain plant health and shape, with different rose types requiring varying degrees of attention. Vigilant pest and disease monitoring, supplemented by proactive measures such as sanitation and the selection of disease-resistant varieties, is crucial. Harvesting roses at the optimal bud stage, using clean, sharp tools and removing submerged foliage, ensures quality blooms. Post-harvest care involves immediate hydration, foliage removal to prevent bacterial growth, and storage in a cool, draft-free location. By adhering to these practices, rose enthusiasts can cultivate thriving plants and enjoy a bountiful harvest."
+            ],
+            "response_with_links": [
+                {
+                    "message": "For more details",
+                    "text": "Visit",
+                    "link": "https://krishijagran.com/agripedia/a-guide-how-to-have-healthy-rose-plantation"
+                },
+                {
+                    "message": "This Webpage",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "For More details in video ",
+                    "text": "watch",
+                    "link": "https://www.youtube.com/watch?v=WACx0f1fiiY"
+                },
+                {
+                    "message": "To watch anothe video ",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=Dnnlynkk6co"
+                },
+                {
+                    "message": "For planting Roses at Indoor ",
+                    "text": "watch",
+                    "link": "https://www.youtube.com/watch?v=bLVl1PPv-J8"
+                }
+            ],
+            "context": [
+                "soil for rose plantation"
+            ]
+        },
+        {
+            "tag": "soil for rose plantation",
+            "patterns": [
+                "what types of soil needed for rose plantation",
+                "soil for rose plantation",
+                "soil",
+                "soil for farming roses"
+            ],
+            "responses": [
+                "loamy soil,sandy soil,silt soil,clay soil,well-draining soil mix"
+            ],
+            "context": [
+                "loamy soil"
+            ]
+        },
+        {
+            "tag": "loamy soil",
+            "patterns": [
+                "what is loamy soil",
+                "loamy soil",
+                "what it is provide?"
+            ],
+            "responses": [
+                "It consists of a balanced mixture of sand, silt, and clay, which allows for adequate aeration and water retention.",
+                "it provides good drainage while retaining moisture and nutrients"
+            ],
+            "context": [
+                "sandy soil"
+            ]
+        },
+        {
+            "tag": "sandy soil ",
+            "patterns": [
+                "what is sandy soil",
+                "sandy soil",
+                "what it is provide?"
+            ],
+            "responses": [
+                "Sandy soil drains well and warms up quickly in the spring, which can be advantageous for roses, especially in cooler climates",
+                "sandy soil tends to dry out quickly and may require more frequent watering and fertilization."
+            ],
+            "context": [
+                "silt soil"
+            ]
+        },
+        {
+            "tag": "silt soil ",
+            "patterns": [
+                "what is silt soil",
+                "silt soil",
+                "what it is provide?"
+            ],
+            "responses": [
+                "Silt soil has smaller particles than sandy soil but larger particles than clay soil",
+                "It holds moisture well and is fertile, making it suitable for roses"
+            ],
+            "context": [
+                "well-draining soil mix"
+            ]
+        },
+        {
+            "tag": "well-draining soil mix",
+            "patterns": [
+                "what is well-draining soil mix",
+                "well-draining soil mix",
+                "what it is provide?"
+            ],
+            "responses": [
+                " If your garden has poor soil quality or heavy clay, you can create a suitable planting environment for roses by amending the soil with organic matter and perlite or coarse sand to improve drainage"
+            ],
+            "context": [
+                "soil for rose plantation in bd"
+            ]
+        },
+        {
+            "tag": "soil for rose plantation in bd",
+            "patterns": [
+                "what types of soil is bestt for rose",
+                "best soil for rose plantation",
+                "best soil"
+            ],
+            "responses": [
+                " Well-drained and fertile loamy soil with a pH value of 6.0-6.5 is best for rose cultivation."
+            ],
+            "context": [
+                "season"
+            ]
+        },
+        {
+            "tag": "season",
+            "patterns": [
+                "which season is best for rose plantation",
+                "season for rose farming"
+            ],
+            "responses": [
+                "Early spring is the ideal time to start rose gardening"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "rose",
+            "patterns": [
+                "rose",
+                "roses",
+                "what is rose"
+            ],
+            "responses": [
+                "Roses are woody perennial flowering plants belonging to the genus Rosa in the family Rosaceae. They are one of the most beloved and widely cultivated ornamental plants, known for their beautiful and fragrant flowers. Roses are native to various regions of the world, including Asia, Europe, North America, and Africa."
+            ],
+            "context": [
+                "types of roses"
+            ]
+        },
+        {
+            "tag": "types of rose",
+            "patterns": [
+                "types of rose",
+                "type of roses",
+                "different type of roses"
+            ],
+            "responses": [
+                "Victor Hugo Rose, Winchester Cathedral Rose, Gold Medal Rose, Black Baccara Rose, Michelangelo Rose, Rose By Sara Verdier, Hybrid Tea Rose,Floribunda Rose,Grandiflora Rose,Shrub Rose, Groundcover Rose"
+            ],
+            "context": [
+                "color of rose"
+            ]
+        },
+        {
+            "tag": "color of rose",
+            "patterns": [
+                "colors of roses",
+                "color",
+                "what type of colors roses have?"
+            ],
+            "responses": [
+                "black,white,red,pink,blue,purple,orange,gold,yellow"
+            ],
+            "context": [
+                "color of roses in bd"
+            ]
+        },
+        {
+            "tag": "color of roses in bd",
+            "patterns": [
+                "color of roses in Bangladesh",
+                "color of roses in BD",
+                "which colored roses are found in Bangladesh?"
+            ],
+            "responses": [
+                "white,red,pink,orange,gold,yellow"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Work",
+            "patterns": [
+                "what can you do?",
+                "what do you do?",
+                "What is your job?",
+                "what is your work?",
+                "your work"
+            ],
+            "responses": [
+                "I give Rose diseases preventation suggesstions",
+                "I give Rose plantation guidelines"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "rose diseases",
+            "patterns": [
+                "how many types of rose diseases are there?",
+                "which rose diseases you know about?",
+                "rose disease",
+                "rose diseases",
+                "you know about which rose diseases",
+                "what type of rose diseases are there?",
+                "what type of rose diseases you know about",
+                "type of rose diseases"
+            ],
+            "responses": [
+                "Black spot, Cercospora Leaf Spot, Powdery mildew, Rose rust, Botrytis blight ,Rose mosaic virus, Downy mildew, Rose canker, Rose rosette disease, Anthracnose, Crown Gall,Phytophthora Root Rot"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "prevent rose diseases",
+            "patterns": [
+                "how to prevent rose disease?",
+                "which rose diseases you can prevent?",
+                "rose disease preventation",
+                "cure rose disease",
+                "rose diseases cure guide",
+                "what to do to prevent rose disease?",
+                "prevent rose disease",
+                "how to cure rose disease?",
+                "identify, prevent and cure rose disease",
+                "rose disease symptoms",
+                "what are the symptoms of rose disease?",
+                "how to identify rose disease?",
+                "how to control rose disease?",
+                "control rose disease"
+            ],
+            "responses": [
+                ""
+            ],
+            "response_with_links": [
+                {
+                    "message": "To Know Everything About Rose Disease Please ",
+                    "text": "Visit",
+                    "link": "https://www.facebook.com/muhammad.zidane.988371/posts/1107741890274734"
+                },
+                {
+                    "message": "This Facebook post",
+                    "text": "",
+                    "link": ""
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "introduce",
+            "patterns": [
+                "who are you?",
+                "what's your name?"
+            ],
+            "responses": [
+                "I'm a chatbot",
+                "I am a chatbot to give advise about rose plantation and disease preventation"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "blackspot",
+            "patterns": [
+                "what is black spot disease?",
+                "explain black spot",
+                "what is blackspot",
+                "black spot disease",
+                "black spot",
+                "blackspot",
+                "how black spot occurs?",
+                "How the black spot disease look like?",
+                "what are the symptoms of black spot disease?",
+                "black spot symptoms",
+                "leaf has round shaped black colored spots, what disease is it?",
+                "leaf has round shaped black colored spots",
+                "how black spot disease look like?"
+            ],
+            "responses": [
+                "Rose Black Spot. It is a common fungal disease caused by Diplocarpon rosae. It manifests as circular black or dark purple spots with fringed or irregular edges on rose leaves, leading to yellowing, premature leaf drop, and reduced plant vigor. The fungus thrives in muggy weather. Warm temperatures (around 70°F) combined with high humidity (above 70%) create the perfect environment for the fungus to grow and leaves being wet for extended periods, like overhead watering or crowded plantings. , spreading through splashing water or wind-borne spores. It overwinters on fallen leaves, re-infecting new growth in spring.While it won't kill the plant outright, over time it can weaken the plant making it more susceptible to other diseases and winter damage"
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Black spot",
+                    "text": "Click",
+                    "link": "https://www.gardendesign.com/pictures/images/400x320Exact_46x0/site_3/black-spot-disease-black-spot-on-rose-leaves-shutterstock-com_15952.jpg"
+                }
+            ],
+            "context": [
+                "prevent black spot"
+            ]
+        },
+        {
+            "tag": "prevent black spot",
+            "patterns": [
+                "solution for black spot?",
+                "solutions of black spot",
+                "how to prevent black spot?",
+                "how to treat black spot?",
+                "how to save roses from black spot disease",
+                "prevent black spot disease",
+                "prevent blackspot",
+                "how to cure black spot",
+                "cure black spot",
+                "how to control black spot?",
+                "black spot control",
+                "suggestions for black spot",
+                "advises for black spot"
+            ],
+            "responses": [
+                "Prevention: Plant Selection: Choose rose varieties known for their black spot resistance. Watering Practices: Water deeply and infrequently, aiming for the water to reach the roots and avoid soaking the leaves. Wet leaves favor fungal growth. Air Circulation: Prune to improve air circulation around the rose bush. This allows leaves to dry quickly, reducing the risk of fungal infection. Hygiene: Remove fallen leaves and debris around the base of the plant in fall or winter. Fungal spores can overwinter in these materials. Fungicides: Apply a fungicide containing chlorothalonil, mancozeb, or sulfur as a preventative measure, especially before the typical spring and fall outbreaks. Cure: Early Detection: Once black spot appears, act quickly to prevent further spread. Removal: Remove and destroy infected leaves to eliminate fungal spores. Fungicides: Apply a fungicide specifically labeled for treating black spot on roses. Follow the application instructions carefully. Remember, fungicides are most effective when used preventatively, but they can still help slow the spread of the disease. Additional Tips: Avoid overhead watering, which can splash spores onto healthy leaves. Consider applying a layer of mulch around the base of the rose bush to suppress weed growth and prevent fungal spores in the soil from splashing onto the plant. There are also several home remedy options for black spot, such as baking soda sprays or milk mixtures. However, these may not be as effective as commercial fungicides."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about Black Spot preventation",
+                    "text": "Visit",
+                    "link": "https://www.thespruce.com/black-spot-on-roses-4125530"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "And To Watch preventation video",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=G1K2LYuOnGA"
+                }
+            ],
+            "context": [
+                "cercospora leaf spot"
+            ]
+        },
+        {
+            "tag": "cercospora leaf spot",
+            "patterns": [
+                "what is cercospora spot disease?",
+                "explain cercospora leaf spot",
+                "cercospora leaf spot disease",
+                "cercospora leaf spot",
+                "how cercospora leaf spot occurs?",
+                "How the cercospora leaf spot disease look like?",
+                "what are the symptoms of cercospora leaf spot disease?",
+                "cercospora leaf spot symptoms",
+                "leaf has round shaped small black or grayish-white colored spots, what disease is it?",
+                "leaf has round shaped small black and white colored spots",
+                "how cercospora leaf spot look like?"
+            ],
+            "responses": [
+                "Cercospora leaf spot is a common disease affecting roses. While not as destructive as black spot, it can significantly affect the appearance and health of your rose bushes if left unchecked. Here's a breakdown of what you need to know: Signs and Symptoms: Look for small, circular spots on the upper surface of leaves. These spots are typically brown or purple, with a lighter tan or gray center as they mature. The spots may be surrounded by a faint yellow halo. In severe cases, the spots can enlarge and merge, causing significant leaf damage. Infected leaves may turn yellow and prematurely drop, weakening the rose bush. Causes: The fungal pathogens Cercospora rosicola and Cercospora puderi are the primary culprits behind cercospora leaf spot in roses. These fungi thrive in warm, humid conditions with frequent leaf wetness. Overhead watering, prolonged periods of rain, and dense planting that restricts air circulation can all contribute to the development of cercospora leaf spot."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Cercospora Leaf Spot",
+                    "text": "Click",
+                    "link": "https://edis.ifas.ufl.edu/image/PP267/6394020/691438/691438-1650.webp"
+                }
+            ],
+            "context": [
+                "prevent cercospora leaf spot"
+            ]
+        },
+        {
+            "tag": "prevent cercospora leaf spot",
+            "patterns": [
+                "solution for cercospora leaf spot?",
+                "solutions of cercospora leaf spot",
+                "how to prevent cercospora leaf spot?",
+                "how to treat cercospora leaf spot?",
+                "how to save roses from cercospora leaf spot disease",
+                "prevent cercospora leaf spot",
+                "how to cure cercospora leaf spot",
+                "cure cercospora leaf spot",
+                "how to control cercospora leaf spot?",
+                "cercospora leaf spot control",
+                "suggestions for cercospora leaf spot",
+                "advises for cercospora leaf spot"
+            ],
+            "responses": [
+                "Prevention is Key: The best approach to cercospora leaf spot is to prevent its occurrence. Here are some steps you can take: Watering Practices: Water deeply and infrequently, aiming for the water to reach the roots and avoid soaking the leaves. Air Circulation: Prune your roses regularly to improve air circulation around the plants. Avoid overcrowding rose bushes. Cultural Practices: Regularly remove fallen leaves and debris around the base of the rose bush throughout the growing season. This helps reduce moisture buildup and discourages fungal growth. Resistant Varieties: Consider planting rose varieties known for their resistance to cercospora leaf spot. Treatment for Established Infections: Early Detection: Early intervention is crucial. Once you see signs of cercospora leaf spot, remove and destroy infected leaves to prevent further spread of the spores. Fungicides: If the infection is widespread, you can consider applying a fungicide specifically labeled for treating cercospora leaf spot on roses. Apply according to the product label instructions. Note: Fungicides are most effective as a preventative measure, but they can still help slow the spread of the disease in established cases. Additional Tips: Maintain good overall rose care practices like proper fertilization and mulching to promote healthy and resilient plants. Avoid overhead watering, as this can splash fungal spores onto healthy leaves. There are also some home remedy options like baking soda or milk sprays, but their effectiveness against cercospora leaf spot is not well-established compared to fungicides."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about Cercospora leaf Spot preventation",
+                    "text": "Visit",
+                    "link": "https://www.gardenia.net/disease/cercospora-leaf-spot"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "And To Watch preventation video",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=BvpCrXZFG0I"
+                }
+            ],
+            "context": [
+                "downy mildew"
+            ]
+        },
+        {
+            "tag": "downy mildew",
+            "patterns": [
+                "what is downy mildew disease?",
+                "explain downy mildew",
+                "downy mildew disease",
+                "downy mildew",
+                "how downy mildew occurs?",
+                "How the downy mildew disease look like?",
+                "what are the symptoms of downy mildew disease?",
+                "downy mildew symptoms",
+                "leaf has yellow or pale green colored spots on upper surface, what disease is it?",
+                "leaf has turned yellow color",
+                "how downy mildew disease look like?"
+            ],
+            "responses": [
+                "Downy mildew is a destructive fungal disease that can infect a wide range of plants, including roses. It weakens the plant and reduces its overall health and aesthetic appeal. Here's a breakdown of downy mildew on roses, including how to identify, prevent, and control it: Identification: Look for the following signs on the leaves: Irregularly shaped, purplish-red, brown, or black spots on the upper surface of the leaves. These spots are often restricted by leaf veins, appearing angular. On the underside of the leaves, you'll see a white or grayish, fluffy fungal growth, especially during humid conditions. Downy mildew thrives in cool, wet weather with high humidity. Infected leaves may become distorted pale green or yellow, eventually dropping prematurely. Causal Agent: Unlike most rose diseases caused by fungus, downy mildew isn't a true fungus but an oomycete, a water mold-like organism. The specific pathogen for roses is called Peronospora sparsa."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Downy Mildew",
+                    "text": "Click",
+                    "link": "https://www.ir4project.org/wp-content/uploads/2018/09/RoseDownyMildew_APSNet-300x197.jpg"
+                }
+            ],
+            "context": [
+                "prevent downy mildew"
+            ]
+        },
+        {
+            "tag": "prevent downy mildew",
+            "patterns": [
+                "solution for downy mildew?",
+                "solutions of downy mildew",
+                "how to prevent downy mildew?",
+                "how to treat downy mildew?",
+                "how to save roses from downy mildew disease",
+                "prevent downy mildew",
+                "how to cure downy mildew",
+                "cure downy mildew",
+                "how to control downy mildew?",
+                "downy mildew control",
+                "suggestions for downy mildew",
+                "advises for downy mildew"
+            ],
+            "responses": [
+                "Prevention: Favorable Conditions: Downy mildew struggles in hot and dry environments. Aim for at least 6 hours of sunlight daily for your roses and improve air circulation around the bushes to prevent moisture buildup. Planting: Choose a location with good air circulation and avoid planting roses in low-lying areas prone to moisture accumulation. Watering: Water deeply and infrequently, aiming for the water to reach the roots and avoid soaking the leaves. Wet leaves favor fungal growth. Resistant Varieties: Select rose varieties known for their resistance to downy mildew. Cultural Practices: Regularly remove fallen leaves and debris around the base of the rose bush in fall or winter. Fungal spores can overwinter in these materials. Control Methods: Early Detection: Early intervention is key. Once you see signs of downy mildew, isolate the infected rose bush to prevent spreading the disease. Removal: Remove and destroy heavily infected leaves to eliminate fungal spores. Fungicides: Apply a fungicide specifically labeled for treating downy mildew on roses, particularly before the typical spring and fall outbreaks or during periods with favorable conditions for the disease. Look for fungicides containing copper oxychloride, chlorothalonil, or potassium bicarbonate. Organic Options (for mild cases): In mild cases, you can try spraying the affected areas with a strong jet of water to knock off the spores. You can also try organic fungicides like neem oil solution or potassium bicarbonate solution. However, these may not be as effective as commercial fungicides. Additional Tips: Avoid overfertilizing your roses, particularly with nitrogen-rich fertilizers, as this can promote new growth susceptible to downy mildew. Prune your roses regularly to improve air circulation and remove potential harboring sites for the fungus."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about Downy Mildew preventation",
+                    "text": "Visit",
+                    "link": "https://gardenerspath.com/plants/flowers/downy-mildew-roses/"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "And To Watch preventation video",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=YnjlLbj9AVI"
+                }
+            ],
+            "context": [
+                "powdery mildew"
+            ]
+        },
+        {
+            "tag": "powdery mildew",
+            "patterns": [
+                "what is powdery mildew disease?",
+                "explain powdery mildew",
+                "powdery mildew disease",
+                "powdery mildew",
+                "how powdery mildew occurs?",
+                "How the powdery mildew disease look like?",
+                "what are the symptoms of powdery mildew disease?",
+                "powdery mildew symptoms",
+                "leaf has white and grayish colored spots, what disease is it?",
+                "leaf has white colored colored spots",
+                "how powdery mildew disease look like?"
+            ],
+            "responses": [
+                "Powdery mildew, a fungal disease that plagues many roses, can be unsightly and stunt the growth of your beautiful rose bushes. Identification: Look for white or grayish powdery patches on the leaves, stems, buds, and even flowers of your rose plants. This fungal disease thrives in cool, humid conditions with poor air circulation."
+            ],
+            
+            "response_with_links": [
+                {
+                    "message": "To see an image of Powdery Mildew",
+                    "text": "Click",
+                    "link": "https://media.sciencephoto.com/image/c0342140/800wm/C0342140-Powdery_Mildew_on_Rose.jpg"
+                }
+            ],
+            "context": [
+                "prevent powdery mildew"
+            ]
+        },
+        {
+            "tag": "prevent powdery mildew",
+            "patterns": [
+                "solution for powdery mildew?",
+                "solutions of powdery mildew",
+                "how to prevent powdery mildew?",
+                "how to treat powdery mildew?",
+                "how to save roses from powdery mildew disease",
+                "prevent powdery mildew",
+                "how to cure powdery mildew",
+                "cure powdery mildew",
+                "how to control powdery mildew?",
+                "powdery mildew control",
+                "suggestions for powdery mildew",
+                "advises for powdery mildew"
+            ],
+            "responses": [
+                "Prevention: Favorable Conditions: Aim for at least 6 hours of sunlight daily for your roses. Powdery mildew struggles in hot and dry environments. Planting: Choose a location with good air circulation to prevent moisture buildup around the rose bush. Space your roses adequately to allow for airflow. Watering: Water deeply and infrequently, aiming for the base of the plant rather than overhead watering. Wet leaves create a favorable environment for fungal growth. Resistant Varieties: Select rose varieties known for their resistance to powdery mildew. Cultural Practices: Regularly remove fallen leaves and debris around the base of the rose bush to prevent the fungus from overwintering. Cure: Early Detection: Early intervention is key. Once you see signs of powdery mildew, isolate the infected rose bush to prevent spreading the disease. Removal: Prune and remove heavily infected leaves, stems, and flowers. Destroy the removed plant parts to prevent the fungus from sporulating. Organic Options: In mild cases, you can try spraying the affected areas with a strong jet of water to knock off the powdery mildew spores. You can also try organic fungicides like neem oil solution or potassium bicarbonate solution. Fungicides: Apply a fungicide specifically labeled for treating powdery mildew on roses, especially if the organic methods are not effective. Follow the application instructions carefully. Additional Tips: Avoid overfertilizing your roses, particularly with nitrogen-rich fertilizers, as this can promote new growth susceptible to powdery mildew. Prune your roses regularly to improve air circulation and remove potential harboring sites for the fungus."
+            
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about Powdery Mildew preventation",
+                    "text": "Visit",
+                    "link": "https://hortsense.cahnrs.wsu.edu/fact-sheet/rose-powdery-mildew/"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "And To Watch preventation video",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=A_xsjZ139g4"
+                }
+            ],
+            "context": [
+                "rose slug"
+            ]
+        },
+        {
+            "tag": "rose slug",
+            "patterns": [
+                "what is rose slug disease?",
+                "explain rose slug",
+                "rose slug disease",
+                "rose slug",
+                "how rose slug occurs?",
+                "How the rose slug disease look like?",
+                "what are the symptoms of rose slug disease?",
+                "rose slug symptopms",
+                "leaf has round shaped white colored spots, what disease is it?",
+                "part of leaf is eaten or tored or missing",
+                "how rose slug disease look like?",
+                "rose sawfly slug",
+                "sawfly slug"
+            ],
+            "responses": [
+                "The term 'sawfly slug' likely refers to the larvae of a sawfly that feeds on roses, commonly called rose slugs or rose slugworms. These are not true slugs, although they share a slimy appearance. Identification: Look for small, green, slug-like creatures with a soft, elongated body and a black head (depending on the species). They're typically found on the underside of leaves. You'll notice damage on the upper surface of leaves, appearing as skeletonized patches where the sawfly larvae have eaten away the soft tissue between the veins. Damage:While they don't typically kill the rose bush, heavy infestations of rose sawflies can cause significant defoliation, reducing the plant's vigor and flower production."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Rose Slug",
+                    "text": "Click",
+                    "link": "https://bygl.osu.edu/sites/default/files/styles/720/public/field/image/Roseslug%20Damage%20Glenwood%20Gardens%20Spring%202017.jpg?itok=1kiL9KhZ"
+                }
+            ],
+            "context": [
+                "prevent rose slug"
+            ]
+        },
+        {
+            "tag": "prevent rose slug",
+            "patterns": [
+                "solution for rose slug?",
+                "solutions of rose slug",
+                "how to prevent rose slug?",
+                "how to treat rose slug?",
+                "how to save roses from rose slugs",
+                "prevent rose slug",
+                "how to cure rose slug",
+                "cure rose slug",
+                "how to control rose slug?",
+                "rose slug control",
+                "suggestions for rose slug",
+                "advises for rose slug"
+            ],
+            "responses": [
+                "Prevention: Inspection: Regularly inspect your rose bushes, particularly the undersides of leaves, for signs of sawfly larvae. Encourage Beneficial Insects: Attract ladybugs, lacewings, and parasitic wasps to your garden, as they are natural predators of sawflies. These beneficial insects can help control sawfly populations. Control Methods: Manual Removal: If the infestation is mild, you can simply handpick the sawfly larvae and drop them into a bucket of soapy water. Wear gloves if you prefer. Strong Water Spray: A strong jet of water from the garden hose can dislodge the larvae from the leaves. They won't be able to climb back up and may become prey to birds or other predators. Insecticidal Soap or Neem Oil: For moderate infestations, insecticidal soap spray or neem oil solution can be effective against sawfly larvae. Apply according to the product label's instructions, ensuring thorough coverage of the underside of leaves. Insecticides (last resort): If the infestation is severe and other methods fail, consider using an insecticidal spray containing spinosad or Bt (Bacillus thuringiensis). However, these insecticides may also harm beneficial insects, so use them only as a last resort. Additional Tips: Keep your rose bushes healthy with proper watering, fertilization, and pruning practices. Healthy plants are more resistant to pest problems. Remove fallen leaves and debris around the base of the rose bush in the fall or winter. This can help reduce overwintering populations of sawflies."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about Rose Slug preventation",
+                    "text": "Visit",
+                    "link": "https://www.missouribotanicalgarden.org/gardens-gardening/your-garden/help-for-the-home-gardener/advice-tips-resources/insects-pests-and-problems/insects/sawflies/rose-and-pear-slugs-sawflies"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "And To Watch preventation video",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=jBd8zQrNm8U"
+                }
+            ],
+            "context": [
+                "rose botrytis blight"
+            ]
+        },
+        {
+            "tag": "rose botrytis blight",
+            "patterns": [
+                "what is rose botrytis blight disease?",
+                "explain rose botrytis blight",
+                "rose botrytis blight disease",
+                "rose botrytis blight",
+                "how rose botrytis blight occurs?",
+                "How the rose botrytis blight disease look like?",
+                "what are the symptoms of rose botrytis blight disease?",
+                "rose botrytis blight symptoms",
+                "rose pulps have turned brown color, what disease is it?",
+                "pulps have brown colored spots",
+                "how rose botrytis blight disease look like?"
+            ],
+            "responses": [
+                "Botrytis blight, also known as gray mold, is a fungal disease that can affect roses, particularly in cool, wet weather. It can damage flowers, buds, stems, and leaves. Identification:Look for fuzzy gray or brown mold on flowers, buds, stems, and leaves. Infected flowers may fail to open properly, wilt, or show brown discoloration on the petals. Botrytis blight thrives in cool, wet conditions with high humidity."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Rose Botrytis Blight",
+                    "text": "Click",
+                    "link": "https://www.treloarroses.com.au/image/catalog/Rose%20Care%20And%20Help/NewLayout/Boitrytis.jpg"
+                }
+            ],
+            "context": [
+                "prevent rose botrytis blight"
+            ]
+        },
+        {
+            "tag": "prevent rose botrytis blight",
+            "patterns": [
+                "solution for rose botrytis blight?",
+                "solutions of rose botrytis blight",
+                "how to prevent rose botrytis blight?",
+                "how to treat rose botrytis blight?",
+                "how to save roses from rose botrytis blight disease",
+                "prevent rose botrytis blight",
+                "how to cure rose botrytis blight",
+                "cure rose botrytis blight disease",
+                "how to control rose botrytis blight?",
+                "rose botrytis blight control",
+                "suggestions for rose botrytis blight",
+                "advises for rose botrytis blight",
+                "cure rose botrytis blight"
+            ],
+            "responses": [
+                "Prevention: Favorable Conditions: Aim for good air circulation around your rose bushes. Prune to remove crowded branches and improve airflow. Watering: Water deeply and infrequently, aiming for the base of the plant rather than overhead watering. Wet leaves create a favorable environment for fungal growth. Deadheading: Regularly deadhead spent flowers to remove potential infection sites. Cultural Practices: Remove fallen leaves and debris around the base of the rose bush throughout the growing season. This helps reduce moisture buildup and discourages fungal growth. Management: Early Detection: Early intervention is crucial. Once you see signs of botrytis blight, isolate the infected plant parts to prevent spreading the disease. Removal: Prune and remove infected flowers, buds, stems, and leaves. Destroy the removed plant parts by composting them at high temperatures (above 140°F) or bagging them for disposal with household trash. Fungicides (limited effectiveness): There is no guaranteed cure for Botrytis blight once established. However, you can consider applying a fungicide labeled for treating botrytis blight on roses, particularly during periods with favorable conditions for the disease. Note: Fungicides are most effective as a preventative measure. Additional Tips: Avoid overhead watering, as this can spread the spores. Prune your roses regularly to improve air circulation and remove potential harboring sites for the fungus. Avoid stressing your roses through practices like underwatering or overfertilization, as stressed plants are more susceptible to disease. By following these practices, you can create a less favorable environment for botrytis blight and keep your roses healthy. Remember, prevention through proper care and sanitation is the best approach for managing this disease."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about Rose Botrytis Blight preventation",
+                    "text": "Visit",
+                    "link": "https://kisanvedika.bighaat.com/crop/botrytis-blight-of-rose-causes-symptoms-and-management/"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "And To Watch preventation video",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=JVDsOqQ-VlY"
+                }
+            ],
+            "context": [
+                "anthracnose"
+            ]
+        },
+        {
+            "tag": "anthracnose",
+            "patterns": [
+                "what is anthracnose disease?",
+                "explain anthracnose",
+                "anthracnose disease",
+                "anthracnose",
+                "how anthracnose occurs?",
+                "How the anthracnose disease look like?",
+                "what are the symptoms of anthracnose disease?",
+                "anthracnose symptoms",
+                "leaf has brown and black colored spots, what disease is it?",
+                "leaf has round shaped brown colored spots",
+                "how anthracnose disease look like?"
+            ],
+            "responses": [
+                "Anthracnose is a fungal disease that affects roses, particularly in cool, moist weather. It can damage leaves, stems, and even young shoots, causing unsightly spots and potentially weakening the plant. Identification:Look for small, reddish-purple or brown spots on the upper surface of leaves, often with a darker red or purple border. As the disease progresses, the centers of the spots may turn gray or white and develop tiny black fruiting bodies of the fungus. In severe cases, the spots may grow larger, causing leaves to turn yellow and drop prematurely. Stems and young shoots can also develop similar lesions."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Anthracnose",
+                    "text": "Click",
+                    "link": "https://buggyrose.tripod.com/diseases/21fungi/21anthracnose.jpg"
+                }
+            ],
+            "context": [
+                "prevent anthracnose"
+            ]
+        },
+        {
+            "tag": "prevent anthracnose",
+            "patterns": [
+                "solution for anthracnose?",
+                "solutions of anthracnose",
+                "how to prevent anthracnose?",
+                "how to treat anthracnose?",
+                "how to save roses from anthracnose disease",
+                "prevent anthracnose",
+                "how to cure anthracnose",
+                "cure anthracnose",
+                "how to control anthracnose?",
+                "anthracnose control",
+                "suggestions for anthracnose",
+                "advises for anthracnose",
+                "cure anthracnose disease",
+                "anthracnose disease treatment"
+            ],
+            "responses": [
+                "Prevention:Favorable Conditions: Anthracnose thrives in cool, wet weather with high humidity. Planting: Choose a location for your roses with good air circulation and at least 6 hours of sunlight daily. Watering: Water deeply and infrequently, aiming for the water to reach the roots and avoid soaking the leaves. Wet leaves favor fungal growth. Spacing: Ensure proper spacing between rose bushes to allow for air circulation. Cultural Practices: Regularly remove fallen leaves and debris around the base of the rose bush to prevent the fungus from overwintering. Resistant Varieties: Plant rose varieties known for their resistance to anthracnose. Management:Early Detection: Early intervention is crucial. Once you see signs of anthracnose, isolate the infected rose bush to prevent spreading the disease. Removal: Remove infected leaves or affected parts of stems as soon as you see signs of anthracnose. Sanitation: Destroy removed plant parts by composting them at high temperatures (above 140°F) or discarding them in sealed bags with household trash. Fungicides: While fungicides are most effective as a preventative measure, you can consider applying a fungicide specifically labeled for treating anthracnose on roses, particularly during periods with favorable conditions for the disease. Look for fungicides containing copper oxychloride, chlorothalonil, or potassium bicarbonate. Additional Tips: Avoid overhead watering, as this can spread the disease spores. Prune your roses regularly to improve air circulation and remove potential harboring sites for the fungus. Avoid wounding your rose bushes through practices like harsh mechanical weed removal or excessive handling, as wounds can be entry points for the fungus. By following these tips, you can create a less favorable environment for anthracnose and keep your roses healthy. Remember, prevention through proper care and sanitation is key to managing this disease."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about Anthracnos disease preventation",
+                    "text": "Visit",
+                    "link": "https://www.gardeningknowhow.com/ornamental/flowers/roses/spot-anthracnose-roses.htm"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                }
+            ],
+            "context": [
+                "rose rosette"
+            ]
+        },
+        {
+            "tag": "rose rosette",
+            "patterns": [
+                "what is rose rosette disease?",
+                "explain rose rosette",
+                "rose rosette disease",
+                "rose rosette",
+                "how rose rosette occurs?",
+                "How the rose rosette disease look like?",
+                "what are the symptoms of rose rosette disease?",
+                "rose rosette symptoms",
+                "leaf distortion and an unusual red or yellow mottling of the leaves, what disease is it?",
+                "pulps are distored or died",
+                "how rose rosette disease look like?"
+            ],
+            "responses": [
+                "rose rosette disease (RRD) is a serious and damaging viral disease that affects roses. Unlike most rose diseases caused by fungus, RRD is caused by a virus transmitted by tiny mites. Identification:Look for abnormal growth patterns on your roses. This can include: Excessive thorniness on stems Thickened and enlarged canes Distorted and stunted leaves with a reddish color Development of clusters of short, bright red shoots at branch ends, resembling a 'witches' broom' . Cause:Rose rosette virus (RRV) transmitted by eriophyid mites. These mites are microscopic and difficult to see without magnification.Unfortunately, there is no cure for rose rosette disease. "
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Rose Rosette disease",
+                    "text": "Click",
+                    "link": "https://extensiongardener.ces.ncsu.edu/wp-content/uploads/2020/03/rose-rosette-2-Cyndi-Lauderdale.jpg"
+                }
+            ],
+            "context": [
+                "prevent rose rosette"
+            ]
+        },
+        {
+            "tag": "prevent rose rosette",
+            "patterns": [
+                "solution for rose rosette disease?",
+                "solutions of rose rosette disease",
+                "how to prevent rose rosette?",
+                "how to treat rose rosette?",
+                "how to save roses from rose rosette disease",
+                "prevent rose rosette",
+                "how to cure rose rosette",
+                "cure rose rosette",
+                "how to control rose rosette?",
+                "rose rosette control",
+                "suggestions for rose rosette",
+                "advises for rose rosette"
+            ],
+            "responses": [
+                "Prevention: Eliminate Multiflora Roses: Multiflora roses are a known host for the eriophyid mites that transmit RRD. If you have them on your property, consider removing them to reduce the risk of spreading the disease to your garden roses. Pruning and Sanitation: Regularly prune your roses to remove potential harboring sites for mites. Additionally, remove and destroy fallen leaves and debris around the base of the rose bush to prevent mites from overwintering. Avoid Leaf Blowers: Using leaf blowers near your roses can spread the mites that transmit RRD. If you suspect a rose bush has rose rosette disease, the recommended course of action is to remove and destroy the entire plant, including the root ball. This helps prevent the disease from spreading to other roses in your garden. Here are some additional resources you may find helpful:Rose Rosette Virus Identification and Control: https://www.provenwinners.com/.../what-rose-rosette-disease Rose Rosette Disease: Prevention and Treatment: https://ahsgardening.org/.../GS_TAG_ND17_rose_rosette.pdf"
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about Rose Rosette disease preventation",
+                    "text": "Visit",
+                    "link": "https://www.gardendesign.com/how-to/rose-rosette-disease.html"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "And To Watch preventation video",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=g-KLdd_Y6f0"
+                }
+            ],
+            "context": [
+                "rose rust"
+            ]
+        },
+        {
+            "tag": "rose rust",
+            "patterns": [
+                "what is rose rust disease?",
+                "explain rose rust",
+                "rose rust disease",
+                "rose rust",
+                "how rose rust occurs?",
+                "How the rose rust disease look like?",
+                "what are the symptoms of rose rust disease?",
+                "rose rust symptoms",
+                "leaf has small shaped orange colored spots, what disease is it?",
+                "leaf has small shaped yellow red colored spots",
+                "how rose rust disease look like?"
+            ],
+            "responses": [
+                "Rose rust, caused by fungal pathogens of the genus Phragmidium, is a common disease affecting roses. It can be unsightly but rarely fatal to the plant. Identification:Look for small, orange or yellow-red spots on the upper surface of leaves. On the underside of the leaves, you'll see clusters of orange or black fungal spores, often with a powdery texture."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Rose Rust",
+                    "text": "Click",
+                    "link": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQt_2wGd_UnLiiEJ9YxeVRDq96GL_d2rLFRUrk1cUzgq1VFdNyHl8L6IWWlr3UJhd88TFrhYtTK3ngBx0c"
+                }
+            ],
+            "context": [
+                "prevent rose rust"
+            ]
+        },
+        {
+            "tag": "prevent rose rust",
+            "patterns": [
+                "solution for rose rust?",
+                "solutions of rose rust",
+                "how to prevent rose rust?",
+                "how to treat rose rust?",
+                "how to save roses from rose rust disease",
+                "prevent rose rust",
+                "how to cure rose rust",
+                "cure rose rust",
+                "how to control rose rust?",
+                "rose rust control",
+                "suggestions for rose rust",
+                "advises for rose rust"
+            ],
+            "responses": [
+                "Prevention:Favorable Conditions: Rose rust thrives in cool, moist weather with moderate temperatures (around 65-70°F).Planting: Choose a location for your roses with good air circulation and at least 6 hours of sunlight daily.Watering: Water deeply and infrequently, aiming for the water to reach the roots and avoid soaking the leaves. Wet leaves favor fungal growth. Spacing: Ensure proper spacing between rose bushes to allow for air circulation. Resistant Varieties: Select rose varieties known for their resistance to rose rust. Cultural Practices: Regularly remove fallen leaves and debris around the base of the rose bush, particularly in fall, to prevent fungal spores from overwintering. Treatment:Early Detection: Early intervention is key. Once you see signs of rose rust, isolate the infected rose bush to prevent spreading the disease. Removal: Prune and remove heavily infected leaves. Destroy the removed plant parts by composting them at high temperatures (above 140°F) or bagging them for disposal with household trash. Fungicides: Apply a fungicide specifically labeled for treating rose rust on roses, particularly during periods with favorable conditions for the disease. Look for fungicides containing sulfur, neem oil, or potassium bicarbonate. Additional Tips:Avoid overhead watering, as this can spread the spores. Improve air circulation around the rose bush by pruning regularly. There are also some home remedy options like baking soda or milk sprays, but their effectiveness against rose rust is not well-established. By following these practices, you can significantly reduce the risk of rose rust outbreaks and keep your roses healthy and beautiful. Remember, prevention through proper care and sanitation is the best defense against this fungal disease."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about Rose Rust disease preventation",
+                    "text": "Visit",
+                    "link": "https://gardenerspath.com/plants/flowers/rose-rust/"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "And To Watch preventation video",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=em0ZmIk40Vg"
+                }
+            ],
+            "context": [
+                "phytophthora root rot"
+            ]
+        },
+        {
+            "tag": "phytophthora root rot",
+            "patterns": [
+                "what is phytophthora root rot disease?",
+                "explain phytophthora root rot",
+                "phytophthora root rot disease",
+                "phytophthora root rot",
+                "how phytophthora root rot occurs?",
+                "How the phytophthora root rot disease look like?",
+                "what are the symptoms of phytophthora root rot disease?",
+                "phytophthora root rot symptopms",
+                "leaf has turned brown or yellow colored, what disease is it?",
+                "root has turned black and rotted",
+                "leafs are small and roses are less growing",
+                "how phytophthora root rot disease look like?"
+            ],
+            "responses": [
+                "A Destructive Fungal Disease in Roses and Many Plants. Phytophthora root rot is a serious fungal disease that affects a wide range of plants, including roses. It's caused by various Phytophthora species and can be highly destructive, causing root damage, wilting, and even death in some cases. Symptoms:Wilting: One of the most common signs is wilting of the rose bush, particularly during the day and often recovering slightly at night. This wilting occurs even when the soil feels moist. Stunted Growth: Infected roses may exhibit stunted growth, with smaller leaves and fewer flowers compared to healthy plants. Foliar Symptoms: While less common, advanced stages of the disease can cause yellowing, browning, or dieback of leaves. Root Damage: Examination of the root system might reveal blackened, rotted roots, often with a soft and mushy texture. Cause:Phytophthora Species: This disease is caused by various soilborne fungal pathogens belonging to the genus Phytophthora. These fungi thrive in cool, moist conditions and spread through waterlogged soil."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Phytophthora Root Rot",
+                    "text": "Click",
+                    "link": "https://extension.usu.edu/pests/ipm/images/ornamental-pest-guide/diseases/phytophthora_william-m-brown-jr_bugwood.jpg"
+                }
+            ],
+            "context": [
+                "prevent phytophthora root rot"
+            ]
+        },
+        {
+            "tag": "prevent phytophthora root rot",
+            "patterns": [
+                "solution for phytophthora root rot?",
+                "solutions of phytophthora root rotblack spot",
+                "how to prevent phytophthora root rot?",
+                "how to treat phytophthora root rot?",
+                "how to save roses from phytophthora root rot disease",
+                "prevent phytophthora root rot",
+                "how to cure phytophthora root rot",
+                "cure phytophthora root rot",
+                "how to control phytophthora root rot?",
+                "phytophthora root rot control",
+                "suggestions for phytophthora root rot",
+                "advises for phytophthora root rot"
+            ],
+            "responses": [
+                "Prevention: Drainage: Ensuring proper drainage is crucial. Amend your soil with organic matter or plant roses in raised beds to improve drainage and prevent waterlogging. Planting Location: Select a location with good air circulation and at least 6 hours of sunlight daily. Avoid planting roses in low-lying areas prone to water accumulation. Watering Practices: Water deeply and infrequently, aiming for the water to reach the roots and avoid soaking the soil constantly. Resistant Varieties: Consider planting rose varieties known for some degree of tolerance to Phytophthora root rot. Management:Unfortunately, there's no guaranteed cure for established Phytophthora root rot infections. However, you can take steps to manage the disease and potentially save the rose bush:Improve Drainage: If possible, improve drainage around the infected rose bush by creating raised beds or mounding soil around the base. Fungicides (limited effectiveness): While fungicides may not completely eliminate the disease, applying a fungicide specifically labeled for Phytophthora root rot on roses might help slow its progression. Cultural Practices: Regularly remove fallen leaves and debris around the base of the rose bush to prevent the fungus from harboring and spreading. Severe Cases: In severe cases, where the rose bush is heavily infected and unlikely to recover, removing and destroying the entire plant, including the root ball, is recommended to prevent the disease from spreading to other roses in your garden. Additional Tips:Avoid overfertilizing your roses, particularly with excessive nitrogen, as this can promote new growth susceptible to disease. Practice crop rotation in your rose bed. Don't plant roses in the same location year after year. Sterilize any tools used for pruning or digging around rose bushes, especially if working with infected plants, to prevent spreading the fungus. By following these practices, you can significantly reduce the risk of Phytophthora root rot in your roses and promote a healthy rose garden. Remember, prevention through proper drainage, watering practices, and sanitation is the best defense against this destructive fungal disease."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about Phytophthora Root Rot preventation",
+                    "text": "Visit",
+                    "link": "https://www.rhs.org.uk/disease/phytophthora-root-rot"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                }
+            ],
+            "context": [
+                "crown gall"
+            ]
+        },
+        {
+            "tag": "crown gall",
+            "patterns": [
+                "what is crown gall disease?",
+                "explain crown gall",
+                "crown gall disease",
+                "crown gall",
+                "how crown gall occurs?",
+                "How the crown gall disease look like?",
+                "what are the symptoms of crown gall disease?",
+                "crown gall symptopms",
+                "Lumpy, warty growths on the roots, stems, or branches of a rose bush, what disease is it?",
+                "There is tumor shaped green, white, brown, or black colored object in stem",
+                "how crown gall disease look like?"
+            ],
+            "responses": [
+                "Rose Crown Gall:  Crown gall is a bacterial disease that affects many plants, including roses. It is caused by the bacterium Agrobacterium tumefaciens. This bacterium lives in the soil and enters plants These galls can be various sizes and shapes, but they are typically round or lobed and have a rough, warty surface. They can be green, white, brown, or black in color. Galls can appear on the roots, stems, or branches of a rose bush.Crown gall can stunt the growth of a rose bush and make it more susceptible to other diseases. In severe cases, it can kill the rose bush.Here are some of the signs and symptoms of crown gall:Lumpy, warty growths on the roots, stems, or branches of a rose bush,The galls may be green, white, brown, or black in color,The galls may be various sizes and shapes,Stunted growth of the rose bush, Wilting of the rose bush"
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Crown Gall",
+                    "text": "Click",
+                    "link": "https://wpcdn.web.wsu.edu/cahnrs/uploads/sites/41/rosecrowngall.jpg"
+                }
+            ],
+            "context": [
+                "prevent crown gall"
+            ]
+        },
+        {
+            "tag": "prevent crown gall",
+            "patterns": [
+                "solution for crown gall?",
+                "how to prevent crown gall?",
+                "how to save roses from crown gall disease",
+                "prevent crown gall",
+                "how to cure crown gall",
+                "cure crown gall",
+                "how to control crown gall?",
+                "crown gall control",
+                "suggestions for crown gall",
+                "advises for crown gall"
+            ],
+            "responses": [
+                "There is no cure for crown gall, but there are ways to prevent it and to manage it. Here are some tips:Prevention:Purchase roses from a reputable nursery that sells disease-resistant varieties.Avoid wounding the roots or stems of your rose bushes when planting or pruning them.Disinfect your pruning tools before using them on your rose bushes.Do not compost rose bushes that have crown gall.Management:If you see a small gall on a rose bush, you can try to cut it off with a clean knife. Be sure to sterilize the knife before and after cutting.If the galls are large or widespread, it may be best to remove the rose bush from the garden and destroy it.Once you have removed a rose bush with crown gall, be sure to disinfect the soil before planting a new rose bush in its place.By following these tips, you can help to prevent crown gall from infecting your rose bushes and keep your roses healthy.through wounds on the roots or stems. Once inside the plant, the bacterium transfers genes to the plant cells, which causes them to divide uncontrollably and form tumors called galls."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about crown gall preventation",
+                    "text": "Visit",
+                    "link": "https://www.planetnatural.com/pest-problem-solver/plant-disease/crown-gall/#:~:text=Tip%3A%20To%20get%20rid%20of,1%2F2%20gallons%20of%20water."
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "And To Watch preventation video",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=FIJN4pOBpUE"
+                }
+            ],
+            "context": [
+                "rose dieback"
+            ]
+        },
+        {
+            "tag": "die back",
+            "patterns": [
+                "what is rose die back disease?",
+                "explain dieback",
+                "die back disease",
+                "die back",
+                "how die back occurs?",
+                "How the die back disease look like?",
+                "what are the symptoms of die back disease?",
+                "die back symptopms",
+                "the stem is not producing any leaf, what disease is it?",
+                "the stem has turned brown or black color and unproductive",
+                "how die back disease look like?"
+            ],
+            "responses": [
+                "Rose Dieback: Rose dieback isn't a single disease, but rather a condition that describes the dieback of canes or stems on rose bushes. It can be caused by a number of factors, including:Fungal diseases: These are the most common cause of rose dieback. Some of the most common fungal diseases that can cause dieback include Botrytis cinerea (grey mould), Diplodia rosarum (stem canker), and Phomopsis cane spot. Environmental stress: Roses that are stressed by drought, excessive heat or cold, poor soil conditions, or lack of nutrients are more susceptible to dieback.Poor pruning practices: Improper pruning can damage rose canes and make them more susceptible to infection.Pest damage: In some cases, dieback can be caused by damage from insects or other pests.The symptoms of rose dieback can vary depending on the cause, but they typically include:Browning or blackening of the tips or canes of the rose bush,Dieback of canes or stems,Wilting of leaves,Stunted growth, If you think your rose bushes may have dieback, it's important to diagnose the cause of the problem as soon as possible. Once you know the cause, you can take steps to treat the problem and prevent it from recurring."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Rose die back",
+                    "text": "Click",
+                    "link": "https://www.mindenpictures.com/cache/pcache2/80107057.jpg"
+                }
+            ],
+            "context": [
+                "prevent die back"
+            ]
+        },
+        {
+            "tag": "prevent die back",
+            "patterns": [
+                "solution for die back?",
+                "how to prevent die back?",
+                "how to save roses from die back disease",
+                "prevent die back",
+                "how to cure die back",
+                "cure die back",
+                "how to control die back?",
+                "die back control",
+                "suggestions for die back",
+                "advises for die back"
+            ],
+            "responses": [
+                "Here are some general tips for treating rose dieback:Prune out any affected canes or stems. Cut back to healthy tissue, making sure to sterilize your pruners before and after pruning.Improve the growing conditions for your roses. Make sure they are getting enough water, sunlight, and nutrients.Apply a fungicide if the dieback is caused by a fungal disease. There are a number of fungicides available that are effective against rose dieback.Keep your rose bushes healthy by watering them regularly, fertilizing them properly, and pruning them correctly. This will help them to resist disease and pests.With proper care, you can help your rose bushes recover from dieback and continue to thrive for many years to come."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about rose die back preventation",
+                    "text": "Visit",
+                    "link": "https://www.housedigest.com/1375877/gardening-hack-rose-plant-dieback-turmeric/"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "And To Watch preventation video",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=mMtT4or5CW4"
+                }
+            ],
+            "context": [
+                "rose mosaic virus"
+            ]
+        },
+        {
+            "tag": "rose mosaic virus",
+            "patterns": [
+                "what is rose mosaic virus disease?",
+                "explain rose mosaic virus",
+                "rose mosaic virus disease",
+                "mosaic virus",
+                "how rose mosaic virus occurs?",
+                "How the rose mosaic virus disease look like?",
+                "what are the symptoms of rose mosaic virus disease?",
+                "rose mosaic virus symptoms",
+                "yellowing of veins or distorted oak leaf pattern, what disease is it?",
+                "Yellow or white or brownish lines or bands or rings on leaves",
+                "how rose mosaic virus disease look like?"
+            ],
+            "responses": [
+                "Rose mosaic is a viral disease that weakens roses and affects their overall health and appearance. Cause:Rose mosaic is caused by a complex of viruses, often a combination of Prunus Necrotic Ringspot Virus (PNRSV) and Apple Mosaic Virus (ApMV). These viruses can infect roses through various means, unlike fungal diseases. Transmission:Propagation: The most common way rose mosaic spreads is through infected plant material used for propagation (grafting, budding, or rooting infected cuttings). Infected roses may not show symptoms initially but can still transmit the virus. Insects (less common): While less frequent, some research suggests thrips or contaminated pruning tools might occasionally spread the virus. Symptoms:The symptoms of rose mosaic can vary depending on the rose variety, the specific virus involved, and environmental conditions. Some common signs include:Yellow, white, or brownish lines, bands, or rings on leaves. Wavy lines or vein clearing (yellowing of veins). Oak-leaf patterns (distorted leaves resembling oak leaves). Blotches of yellow and green on leaves (mosaic pattern). Color-breaking (mottled flower color) in some rose cultivars. Stunted growth and reduced flower production. Important Note:It's important to remember that not all yellowing or discoloration on rose leaves indicates mosaic virus. Nutrient deficiencies, environmental stress, or other diseases can also cause similar symptoms."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To see an image of Rose Mosaic virus disease",
+                    "text": "Click",
+                    "link": "https://gardenerspath.com/wp-content/uploads/2022/07/Rose-Mosaic-Virus-Pin.jpg"
+                }
+            ],
+            "context": [
+                "prevent rose mosaic virus"
+            ]
+        },
+        {
+            "tag": "prevent rose mosaic virus",
+            "patterns": [
+                "solution for rose mosaic virus?",
+                "solutions of rose mosaic virus",
+                "how to prevent rose mosaic virus?",
+                "how to treat rose mosaic virus?",
+                "how to save roses from rose mosaic virus",
+                "prevent rose mosaic virus",
+                "how to cure rose mosaic virus",
+                "cure rose mosaic virus",
+                "how to control rose mosaic virus?",
+                "rose mosaic virus control",
+                "suggestions for rose mosaic virus",
+                "advises for rose mosaic virus"
+            ],
+            "responses": [
+                "Management:Unfortunately, there is no cure for rose mosaic once a plant is infected. The virus becomes systemic and spreads throughout the rose bush. Here's how to manage the situation: Prevention:Purchase healthy roses from reputable nurseries that use disease-free propagation methods. Avoid using rootstocks or cuttings from unknown sources. Disinfect pruning tools regularly with rubbing alcohol or a 10% bleach solution to minimize the (less common) risk of spreading through tools. Removal:If you suspect a rose has rose mosaic, it's best to remove and destroy the entire plant, including the root ball. This helps prevent the virus from spreading to other roses in your garden. Additional Tips:Observe your roses regularly for any signs of disease. Early detection of any potential problem is crucial. Practice good gardening hygiene by removing fallen leaves and debris around the base of the rose bush. Maintain proper rose care with watering, fertilization, and pruning to promote overall plant health. Healthy roses are generally more resistant to diseases. By following these practices, you can help prevent the spread of rose mosaic and keep your rose garden healthy and thriving. Remember, prevention through purchasing healthy plants and proper care is key when dealing with this viral disease."
+            ],
+            "response_with_links": [
+                {
+                    "message": "To know more details about Rose Mosaic Virus preventation",
+                    "text": "Visit",
+                    "link": "https://gardenerspath.com/plants/flowers/rose-mosaic-virus/"
+                },
+                {
+                    "message": "This Webpage.",
+                    "text": "",
+                    "link": ""
+                },
+                {
+                    "message": "And To Watch preventation video",
+                    "text": "Click",
+                    "link": "https://www.youtube.com/watch?v=CwnHjxkKJw0"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        }
+    ]
+}

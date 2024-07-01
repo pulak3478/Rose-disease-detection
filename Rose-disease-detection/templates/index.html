@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rose Disease Detection Assitant</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      
+    </style>
+</head>
+
+<body style="background-image: url('{{ background_image_url }}');background-size: cover;background-position: center;">
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="/">Home</a>
+    <a href="/pure">ObjDetModel</a>
+    <form action="/increment" method="POST">
+      <button style="background-color: goldenrod;border:none;" type="submit" onclick="openUrl()">Pesticides</button>
+  </form>
+    <a href="run the chatbot file then generate the link and paste it here"target="_blank">Chatbot</a>
+  </div>
+  <script>
+    function openUrl() {
+        window.open("https://garden.com.bd/c/insecticides/", "_blank");
+        return false; 
+    }
+</script>
+    <div id="main">
+      <button id="openbtn" class="openbtn" onclick="openNav()">☰</button><span class="hn">Rose Disease Detection & Plantation Assitant <span style='font-size:25px;'>&#129344;</span></h1></span> </div> 
+    
+    <div class="center" id="mydiv">
+        <form method="post" action="/predict" enctype="multipart/form-data">
+            <h3><label for="image" style="color:#6c2d76">Upload an Image For Detection:</label></h3>
+            <div class="r"><input type="file" id="fileInput" name="image" accept=".jpg, .jpeg, .png" style="color:brown"
+                    required></div>
+            {% if image_exists %}
+            <img src="{{ image_url }}" style="height:150px;width:200px" />
+            {% endif %}
+            <br>
+            <button type="submit" class="button">Predict</button>
+        </form>
+        {% if prediction %}
+        <p class="c">Prediction Result:</p>
+        <p style="color:darkred;font-size:large;">{{prediction}}</p>
+        <p class="c"> Top 3 Possibilities: </p>
+        <ol>
+            {% for i in range(7) %}
+            <li>
+                <span style="font-size:15px">{{ names_dict[i] }}: {{ "%.2f" % (probs[i] * 100) }}%</span>
+            </li>
+            {% endfor %}
+        </ol>
+        {% endif %}
+    </div><br>
+ <div class="cbot">
+        <h3>For Plantation & Disease Preventation Guidance<p><button id="showChatbotButton" style = "color:tomato;background-color: bisque;">Open Chatbot</button> <button id="hideChatbotButton" style="display:none;">Hide Chatbot</button></p>
+        or Scroll Down. </h3>
+ </div><br>
+ <iframe id="chatbotFrame" src="run the chatbot file then generate the link and paste it here" style="width: 100%; display: none;"></iframe>
+
+    <script>
+      document.getElementById('showChatbotButton').addEventListener('click', function() {
+          document.getElementById('chatbotFrame').style.display = 'block';
+          document.getElementById('showChatbotButton').style.display = 'none';
+          document.getElementById('hideChatbotButton').style.display = 'block';
+      });
+
+      document.getElementById('hideChatbotButton').addEventListener('click', function() {
+          document.getElementById('chatbotFrame').style.display = 'none';
+          document.getElementById('showChatbotButton').style.display = 'block';
+          document.getElementById('hideChatbotButton').style.display = 'none';
+      });
+  </script>
+  <button class="collapsible">Rose Plantation Guide</button>
+  <div class="content">
+        <p style="font-size: larger;">For Rose Plantation Guidelines visit this <a href = "https://krishijagran.com/agripedia/a-guide-how-to-have-healthy-rose-plantation/" target="_blank">Website</a> or watch these videos </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WACx0f1fiiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dnnlynkk6co" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p style="font-size: larger;">Watch this video for Rose Plantation tips in home </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bLVl1PPv-J8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button class="collapsible">Black Spot</button>
+    <div class="content">
+      <p>Rose Black Spot is a common fungal disease caused by Diplocarpon rosae. It manifests as circular black or dark purple spots with fringed or irregular edges on rose leaves, leading to yellowing, premature leaf drop, and reduced plant vigor. The fungus thrives in muggy weather. Warm temperatures (around 70°F) combined with high humidity (above 70%) create the perfect environment for the fungus to grow and leaves being wet for extended periods, like overhead watering or crowded plantings. , spreading through splashing water or wind-borne spores. It overwinters on fallen leaves, re-infecting new growth in spring.While it won't kill the plant outright, over time it can weaken the plant making it more susceptible to other diseases and winter damage</p>
+      <p>Prevention and Control:</p>
+      <p>
+           <li> Ensure adequate spacing between rose plants to improve air circulation and reduce humidity.</li>
+           <li> Promptly remove and destroy infected leaves, and prune to enhance ventilation and sunlight exposure.</li>
+           <li> Water at the base to keep foliage dry, avoiding overhead watering. Water in the morning to allow leaves to dry during the day</li>
+           <li>Apply fungicides labeled for black spot control, especially during periods of high humidity. Follow recommended guidelines</li>
+           <li> Inspect rose plants regularly for early signs of disease, taking immediate action upon detection</li>
+           <li>Purchase healthy, disease-free rose plants from reputable sources</li>
+           <li>Encourage populations of beneficial insects that can help control fungal diseases.</li>
+      </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G1K2LYuOnGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button class="collapsible">Cercospora Leaf Spot</button>
+    <div class="content">
+      <p>Cercospora Leaf Spot is a common fungal disease affecting roses. It is caused by the fungus Cercospora rosicola. The disease is characterized by the presence of circular to irregularly shaped spots on the leaves. These spots initially appear as small, water-soaked lesions, which later develop into tan to gray centers with dark brown to purple borders. In severe cases, the spots can merge, causing extensive defoliation. In the final phase, heavily infected leaves turn yellow and drop prematurely, similar to black spot. The fungus thrives in warm and humid conditions(21° to 29°C ) and densely planted roses or those located in sheltered areas with little air movement are more susceptible to it. It spreads through spores produced on infected leaves. Overhead watering, high humidity, and crowded plantings can contribute to the disease's developments</p>
+    <p>Prevention and Control:</p>
+    <p>
+        <li>Practice good pruning techniques to enhance air circulation and sunlight penetration into the plant's interior. This helps reduce humidity and create an environment less favorable for the fungus.</li>
+        <li>Water at the base of the plant to keep foliage dry. Avoid overhead watering, especially during the evening, to minimize leaf wetness periods.</li>
+        <li>Apply a layer of organic mulch around the base of the rose plant to prevent soil splash, which can contribute to the spread of the disease</li>
+        <li> Remove and dispose of infected leaves and plant debris regularly. This reduces the presence of overwintering spores and helps prevent the recurrence of the disease in the following growing season.</li>
+        <li>Regularly inspect plants for early signs of the disease, such as the appearance of small lesions. Early detection allows for timely intervention.</li>
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BvpCrXZFG0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button class="collapsible">Downy Mildew</button>
+    <div class="content">
+      <p>Downy Mildew is a common fungal disease that can affect roses, caused by the pathogen Peronospora sparsa. This disease is characterized by the presence of fuzzy, downy growth on the undersides of infected leaves. It often appears as yellow to pale green spots on the upper leaf surfaces, leading to leaf distortion and premature leaf drop. Cool, wet weather with temperatures between 15° and 18°C, high humidity levels (above 85%) and poor air circulation around rose bushes cause the widespread of this disease.</p>
+      <p>Prevention and Control:</p>
+      <p>
+          <li>Choose well-drained planting sites to minimize excess moisture around the roots.</li>
+          <li>Ensure proper spacing between rose plants to enhance air circulation, reducing humidity around the foliage.</li>
+          <li>Water at the base of the plant, preferably in the morning, to allow leaves to dry quickly and minimize prolonged leaf wetness</li>
+          <li>Avoid using sprinklers or other overhead watering methods that can wet the foliage excessively</li>
+          <li>Practice proper pruning to maintain an open canopy, allowing sunlight to penetrate and reduce humidity</li>
+          <li>Regularly inspect plants for early signs of Downy Mildew, such as the appearance of downy growth on the undersides of leaves.</li>
+          </p> 
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YnjlLbj9AVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button class="collapsible">Powdery Mildew</button>
+    <div class="content">
+      <p>Powdery Mildew is a common fungal disease affecting roses, caused by various species of the Erysiphales family. It manifests as a white, powdery substance on the surfaces of leaves, stems, and buds. The disease can lead to distorted growth, reduced flowering, and overall decline in plant health. Unlike some other fungal diseases, powdery mildew doesn't require free water on the plant surface to infect. The factors that can increase the risk of powdery mildew are, cool night temperatures followed by warm days, overcrowded rose bushes that prevent good air circulation, excessive watering from above, which keeps the foliage wet for extended periods and using high-nitrogen fertilizers that promote new growth.</p>
+      <p>Prevention and Control:</p>
+      <p>
+          <li>Choose a well-ventilated planting site with good air circulation to reduce humidity around the plant</li>
+          <li>Space rose plants adequately to allow for proper air circulation, preventing the buildup of humidity</li>
+          <li>Water the base of the plant early in the day, avoiding overhead watering, to keep foliage dry and minimize conditions favorable for powdery mildew</li>
+          <li>Ensure roses receive sufficient sunlight. Adequate sunlight helps reduce humidity and inhibits the development of powdery mildew</li>
+          <li>Practice proper pruning to maintain an open canopy, allowing sunlight to penetrate the plant and minimizing shaded areas where powdery mildew can thrive</li>
+          <li>Consider fungicide treatments labeled for powdery mildew control. Follow recommended application guidelines, especially during periods of high disease pressur</li>
+          <li>Sulfur-based sprays can be effective in preventing and controlling powdery mildew. These should be applied before the disease becomes severe</li>
+          <li>Regularly inspect rose plants for early signs of powdery mildew, such as the characteristic white powdery growth</li>
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/A_xsjZ139g4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button class="collapsible">Botrytis Blight</button>
+    <div class="content">
+      <p>Botrytis Blight, also known as Gray Mold, is a common fungal disease affecting roses, caused by the fungus Botrytis cinerea. It is caused because of poor air circulation, overhead watering, wounds on the plant and leaving dead plant materials around the rose bush which helps fungus breeding. The symptoms of this disease are Grayish-brown, fuzzy fungal growth on the surface of infected plant parts, small, brown spots on flower petals and leaves that enlarge and become water-soaked, wilting and browning of flowers and leaves, blighted flower buds that fail to open and sunken, dead areas on canes. </p>
+      <p>Prevention and Control:</p>
+      <p>
+        <li>Prune roses to improve air circulation and reduce crowding, limiting conditions favorable for the fungus.</li>
+        <li>Plant roses with adequate spacing to enhance ventilation and reduce humidity around the plants.</li>
+        <li>Water at the base of the plant, avoiding overhead watering, to keep foliage dry and minimize moisture on flowers and buds</li>
+        <li>Remove and dispose of any infected plant material promptly to reduce the presence of overwintering spores</li>
+        <li>Ensure good air circulation around rose plants. Avoid planting roses in excessively crowded conditions</li>
+        <li>Maintain overall plant health through proper fertilization and care, as healthy plants are more resistant to diseases</li>
+        <li>Regularly inspect roses for early signs of Botrytis Blight, especially during periods of increased humidity</li>
+        <li>In severe cases, fungicides labeled for Botrytis control can be used preventively or as soon as symptoms are noticed. Follow recommended application guidelines</li>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JVDsOqQ-VlY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button class="collapsible">Slug</button>
+    <div class="content">
+      <p>Rose slugs are not actually slugs but the larvae of sawflies. They are common pests that can damage the foliage of rose plants. These larvae, resembling slugs, feed on the upper surface of rose leaves, creating characteristic holes and skeletonizing the foliage.It thrives in cool, moist environments with plenty of organic matter to munch on including areas around rose bushes with mulch or compost, underneath leaves and other debris and in damp soil, shady areas of the garden.</p>
+      <p>Prevention and Control:</p>
+      <p>
+        <li>Handpick or shake the larvae off the leaves into a container of soapy water</li>
+        <li>Prune and remove affected foliage to reduce the population of rose slugs.</li>
+        <li>Encourage natural predators such as birds, spiders, and predatory insects that feed on rose slugs</li>
+        <li>Neem oil, a natural pesticide, can be applied to control rose slugs. Follow the product instructions.</li>
+        <li>Healthy roses are better equipped to withstand pest infestations. Provide proper care, including watering and fertilization</li>
+        <li>Planting rose companions that repel sawflies, such as garlic or chives, may help deter infestations.</li>
+        <li>Regularly inspect rose plants for early signs of damage and promptly address any infestations</li>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jBd8zQrNm8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button class="collapsible">More Disease</button>
+    <div class="content">
+        <p style="font-size: larger;">Here, are some other diseases that can happen while planting roses so please match the image of your sick plant with this video and search the disease name in google or youtube for better treatments.</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/oGtzO1XoBcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button class="collapsible">Rose Plantation Guide</button>
+    <div class="content">
+          <p style="font-size: larger;">For Rose Plantation Guidelines visit this <a href = "https://krishijagran.com/agripedia/a-guide-how-to-have-healthy-rose-plantation/">Website</a> or watch these videos </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WACx0f1fiiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Dnnlynkk6co" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p style="font-size: larger;">Watch this video for Rose Plantation tips in home </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/bLVl1PPv-J8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
